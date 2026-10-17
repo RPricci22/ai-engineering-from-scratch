@@ -1,0 +1,16 @@
+services:
+  lab:
+    build: .
+    image: ai-engineering-lab
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/workspace
+      - venv_cache:/workspace/.venv  # Keeps your container .venv safe and persistent
+      - ~/models:/models
+      - ~/datasets:/data
+    stdin_open: true
+    tty: true
+
+volumes:
+  venv_cache:

@@ -44,6 +44,13 @@ Thumbs.db
 *.log
 
 data/
+data/*.csv
+data/*.json
+data/*.txt
+data/*.parquet
+*.csv
+*.json
+*.parquet
 models/
 checkpoints/
 wandb/
